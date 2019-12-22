@@ -1,2 +1,2 @@
 # javascript-lessons
-JavaScript lessons and testing
+JavaScript lessons and testing for ES6
