@@ -4,9 +4,9 @@
   "description": "JavaScript Lessons and testing",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir dist",
+    "build": "babel src --out-dir dist",
     "prepublishOnly": "npm run build",
-    "watch": "NODE_ENV=production babel src --out-dir dist -w"
+    "watch": "babel src --out-dir dist -w"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.4.4"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4"
+    "@babel/polyfill": "^7.4.4",
+    "core-js": "^3.6.0"
   }
 }
