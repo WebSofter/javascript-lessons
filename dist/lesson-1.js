@@ -27,7 +27,7 @@ for (let i = 0; i < buttons.length; i++) {
 
   console.log(name1 + "," + name2); //name2 будет undefined, потому что мы ниже ее определили через var
 
-  var name2 = "John 2";
+  var name2 = "John 1.2";
 })();
 
 helloWorld3();
