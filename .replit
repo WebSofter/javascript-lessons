@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "babel src --out-dir dist"
+run = "npm run build"

@@ -1,22 +1,25 @@
-var buttons = document.querySelectorAll("button");
+/**
+ * 1.1. Использование let и var
+ * 
+ * Отличие let от var: Переменная, объявленная через var,  
+ * видна везде в функции. Переменная, объявленная через let,
+ * видна только в рамках блока {...}, в котором объявлена. 
+ * В новых версиях языка не рекомендуется использовать var.
+ */
+
+
 //Использование var
-for(var i = 0; i<buttons.length; i++)
-{
-    var button = buttons[i];
-    button.innerText = i;
-    button.onclick = function(e){
-        console.log(i);
-    }
-}
+
+
 //Использование let
-for(let i = 0; i<buttons.length; i++)
-{
-    var button = buttons[i];
-    button.innerText = i;
-    button.onclick = function(e){
-        console.log(i);
-    }
-}
+
+/**
+ * 1.2. Всплытие(hoisting)
+ * 
+ * Всплытие - это когда объявление переменных и функций в исполняемом контексте
+ * всплывает наверх контекста.
+ */
+
 //Пример области видимости var/let и всплытия(hoisting)
 (()=>{
     let name1 = "John 1";//let всегда должен указывать переменную до использования
