@@ -8,6 +8,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+/**
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+ * 
+ * Оператор разворота (spread operator)
+ * 
+ * Spread syntax позволяет повторить итерацию, такую как выражение массива или
+ * строк, в местах, где ожидается ноль или больше аргументов (для вызовов
+ * функций) или элементы (для литералов массива), или выражение объекта, которое
+ * должно быть расширено в местах, где пары ключ-значение ноль или больше (для
+ * объектных литералов).
+ */
 //Пример приема из функции
 let person1 = function person1() {
   for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {

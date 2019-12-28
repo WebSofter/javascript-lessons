@@ -1,5 +1,13 @@
 "use strict";
 
+/**
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters
+ * 
+ * Оставшиеся параметры (rest parameters)
+ * 
+ * Синтаксис оставшихся параметров функции позволяет представлять неограниченное множество аргументов в
+ * виде массива.
+ */
 //Обычная передача в функцию параметров
 let getSum = (x, y, z) => {
   return x + y + z;

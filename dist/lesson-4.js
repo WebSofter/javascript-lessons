@@ -12,6 +12,14 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+/**
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings
+ * 
+ * Шаблонные строки и теги (template strings)
+ * Шаблонными литералами называются строковые литералы, допускающие использование выражений внутри.
+ * С ними вы можете использовать многострочные литералы и строковую интерполяцию. В спецификациях
+ * до ES2015 они назывались "шаблонными строками". 
+ */
 //Шаблонные строки оборачиваются в обратные ковычки ``
 let world = 'World!';
 let guis = 'Guis!';
