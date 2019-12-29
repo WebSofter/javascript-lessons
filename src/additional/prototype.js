@@ -58,3 +58,14 @@ function Abrahamic(name, age){
 Abrahamic.prototype.religion = "Abrahamic"
 const Moses = new Abrahamic('Moses', 20);
 console.log(Moses);
+
+/**
+ * 3-ой способ - .call(). Через родительскийметод call
+ */
+
+function Jew(name, age){
+    Abrahamic.call(this, name, age);
+}
+ Jew.prototype.revelation = "Psalms";
+ const Solomon = new Jew("Solomon", 18);
+ console.log(Solomon);
